@@ -1,4 +1,4 @@
-package study_ex;
+package class_method_study_ex;
 
 public class Main {
     public static void main(String[] args) {
