@@ -1,8 +1,8 @@
-package beakjun;
+package baekjoon;
 
 import java.util.Scanner;
 
-public class beakjun_2750_bubble {
+public class baekjoon_2750_selection {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
@@ -12,14 +12,16 @@ public class beakjun_2750_bubble {
             arr[i] = sc.nextInt();
         }
 
-        for(int i=0; i<num-1; i++){
+        for(int i=0; i<num-1;i++){
+            int min = i;
             for(int j=i+1; j<num; j++){
-                if(arr[i] > arr[j]){
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+                if(arr[min] > arr[j]){
+                    min = j;
                 }
             }
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
         }
 
         for(int i=0; i<num; i++){
@@ -27,4 +29,3 @@ public class beakjun_2750_bubble {
         }
     }
 }
-
