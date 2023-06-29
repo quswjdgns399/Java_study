@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.io.IOException;
 
-public class baekjoon_11650 {
+public class baekjoon_11650_Hashset {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
